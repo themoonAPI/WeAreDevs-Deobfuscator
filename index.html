@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeAreDevs Deobfuscator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>WeAreDevs / Prometheus Deobf</h1>
+        <div class="grid">
+            <div>
+                <h2>Obfuscated Input</h2>
+                <textarea id="input" placeholder="Paste obf Lua here..."></textarea>
+            </div>
+            <div>
+                <h2>Deobfuscated Output</h2>
+                <textarea id="output" readonly></textarea>
+            </div>
+        </div>
+        <button onclick="deobfuscate()">DEOBFUSCATE</button>
+        <button onclick="copyOutput()">Copy Output</button>
+        <pre id="status"></pre>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
